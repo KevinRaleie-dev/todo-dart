@@ -115,7 +115,7 @@ int displayTodos() {
 }
 
 int menu() {
-  print('\n✨Welcome to your todo list✨\n');
+  print('\n✨Terminal To-do✨\n');
   print('1. Add a new todo');
   print('2. Edit a todo');
   print('3. List all todos');
