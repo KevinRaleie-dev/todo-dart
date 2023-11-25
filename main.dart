@@ -100,11 +100,19 @@ void deleteTodo() {
    */
 
   int input = displayTodos();
-  int choice = input - 1;
+  try {
+int choice = input - 1;
 
   todos.removeAt(choice);
-  print(todos);
-}
+  int deletedTodo = choice + 1;
+  print("todo number $deletedTodo deleted");
+
+
+  }
+  catch(e) {
+	print(e.toString());
+  }
+  }
 
 int displayTodos() {
   listTodos();
